@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Staff Page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/staff.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{{url_for('home')}}"><h1>Tourelp</h1></a>
+      <div>
+        <div class="dropdown">
+          <a href="{{url_for('tourist')}}"><button class="dropbtn">Tourist</button></a>
+          <div class="dropdown-content">
+            <a href="{{url_for('views.budget_planner')}}">Budget Planner</a>
+            <a href="{{url_for('views.contact_us')}}">Contact Us</a>
+            <a href="{{url_for('views.places_to_visit')}}">Places to Visit</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><a href="{{url_for('local')}}">Locals</a></button>
+          <div class="dropdown-content">
+            <a href="{{url_for('guide')}}">Act as Guide</a>
+            <a href="{{url_for('guide')}}">Act as Artist</a>
+            <a href="{{url_for('views.homestay_tourism')}}">HomestayTourism</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><a href="{{url_for('staff')}}">Staff</a></button>
+          <div class="dropdown-content">
+            <a href="{{url_for('login')}}">Login</a>
+            
+          </div>
+        </div>
+      </div>
+    </nav><br><br>
+	<header>
+		<h1>Staff Page</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Authentication</h2>
+			<form>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password">
+				<input type="submit" value="Log In">
+			</form>
+		</section>
+		<section>
+			<h2>Management</h2>
+			<ul>
+				<li><a href="#">Add Staff Member</a></li>
+				<li><a href="#">Edit Staff Member</a></li>
+				<li><a href="#">Delete Staff Member</a></li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Staff Page. All rights reserved.</p>
+	</footer>
+</body>
+</html>

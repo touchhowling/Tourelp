@@ -1,0 +1,119 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tourelp</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles1.css') }}">
+    
+  </head>
+  <header>
+        <nav class="navbar">
+        <a href="{{url_for('home')}}"><h1>Tourelp</h1></a>
+      <div>
+        <div class="dropdown">
+          <a href="{{url_for('tourist')}}"><button class="dropbtn">Tourist</button></a>
+          <div class="dropdown-content">
+            <a href="{{url_for('views.budget_planner')}}">Budget Planner</a>
+            <a href="{{url_for('views.contact_us')}}">Contact Us</a>
+            <a href="{{url_for('views.places_to_visit')}}">Places to Visit</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><a href="{{url_for('local')}}">Locals</a></button>
+          <div class="dropdown-content">
+            <a href="{{url_for('guide')}}">Act as Guide</a>
+            <a href="{{url_for('guide')}}">Act as Artist</a>
+            <a href="{{url_for('views.homestay_tourism')}}">HomestayTourism</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><a href="{{url_for('staff')}}">Staff</a></button>
+          <div class="dropdown-content">
+            <a href="{{url_for('login')}}">Login</a>
+            
+          </div>
+        </div>
+      </div>
+    </nav><br><br>
+    
+  </header>
+<br>
+
+  <body>
+    <div class="container">
+      <img src="https://static.toiimg.com/thumb/63505288.cms?resizemode=75&width=1200&height=900" alt="Norway" style="width:100%;">
+      <div class="text-block">
+        
+        <h4>HomeStay Tourism</h4>
+        <p>A period during which a visitor lives with a local family</p>
+      </div>
+    </div>
+    <div>
+      <div class="Vision_left">
+        <h3 class="text-dark font-weight-bold">About Rural homestays 
+          <span class="m-0 mt-2"></span></h3>
+        <p class="mt-3 text-dark font-weight-bold text-justify">Rural homestays are experiential tourism product which plays a vital role in rural tourism and also in rural development. These rural homestays along with providing not just the accommodation, but also authentic local experience, opportunities to interact with locals, experience the rural lifestyle, rural communities, get to know the art, craft, food, culture and tradition of the rural India. </p>
+        <p class="mt-3 text-dark font-weight-bold text-justify">A homestay in a village is supported by village panchayat for its operation. A Rural homestay  should have basic amenities, safe environment, rural essence of lifestyle which appeals and satisfy the tourist staying in.</p>
+        <p class="mt-3 text-dark font-weight-bold text-justify">The homestays are the integral part of community, as it supports the rural population with the economical and social strength. This in a way helps to achieve the goal of vocal for local and alsosupport the development of rural tourism in the country.</p>
+
+        <div class="pt-5"></div>
+        <h3 class="text-dark font-weight-bold">Vision <span class="m-0 mt-2"></span></h3>
+        <p class="mt-3 text-dark font-weight-bold text-justify">To develop Rural Homestays as an experiential tourism product, which can give boost to rural tourism, provide entrepreneurial opportunities to rural people and lead to community development.</p>
+
+        <div class="pt-5"></div>
+        <h3 class="text-dark font-weight-bold">Mission <span class="m-0 mt-2"></span></h3>
+        <p class="mt-3 text-dark font-weight-bold text-justify">To provide necessary financial, technical and marketing support to promote rural homestays in the country.</p>
+
+        <div class="pt-5"></div>
+        <h3 class="text-dark font-weight-bold">Strategic Objectives <span class="m-0 mt-2"></span></h3>
+        <ul class="nav flex-column font-weight-bold">
+          <li><i class="far fa-check-circle"></i>To cater to the inçreasing needs of visitors for experiential tourism</li>
+          <li><i class="far fa-check-circle"></i>To create entrepreneurial and job opportunities in rural areas</li>
+          <li><i class="far fa-check-circle"></i>To promote sustainable, responsible and inclusive tourism through promotion of rural homestays</li>
+          <li><i class="far fa-check-circle"></i>To promote rural art and craft, culture, eco-tourism and other forms of nature tourism</li>
+        </ul>
+
+
+        <div class="pt-5"></div>
+        <h3 class="text-dark font-weight-bold">Key Strategic Pillars<span class="m-0 mt-2"></span></h3>
+        <p class="mt-3 text-dark font-weight-bold text-justify">In order to develop rural tourism in the country, the strategy focuses on the following key pillars:</p>
+        <ul class="nav flex-column font-weight-bold mt-3">
+          <li><i class="far fa-check-circle"></i>Digital technologies and platforms for rural homestays</li>
+          <li><i class="far fa-check-circle"></i>Developing clusters for rural homestays</li>
+          <li><i class="far fa-check-circle"></i>Marketing support for rural homestays</li>
+          <li><i class="far fa-check-circle"></i>Capacity building of stakeholders</li>
+          <li><i class="far fa-check-circle"></i>Governance and Institutional Framework</li>
+        </ul>
+        <!-- <div class="pt-5"></div>
+        <h3 class="text-dark font-weight-bold">Objectives <span class="m-0 mt-2"></span></h3>
+        <h6 class="my-3 font-weight-bold">Objectives to promote rural tourism and rural home stays in India are,</h6>
+        <ul class="nav flex-column">
+          <li><i class="far fa-check-circle"></i> Stimulate the job opportunities in rural tourism villages in India.</li>
+          <li><i class="far fa-check-circle"></i> Leverage the country’s rural culture, heritage, and other forms of tourism.</li>
+          <li><i class="far fa-check-circle"></i> Give boost to Atmanirbhar Bharat and Vocal for Local.</li>
+          <li><i class="far fa-check-circle"></i> Share and popularize the best rural tourism practices at both national and international level.</li>
+          <li><i class="far fa-check-circle"></i> Identify and promote the rural tourism clusters.</li>
+          <li><i class="far fa-check-circle"></i> Promote the sustainable, responsible and inclusive tourism through promotion of rural homestays.</li>
+          <li><i class="far fa-check-circle"></i> Giving financial, technical and marketing support to promote rural homestays.</li>
+          <li><i class="far fa-check-circle"></i> To develop rural India which implies both the economic betterment of people as well as greater social transformation.</li>
+        </ul>
+
+        <div class="pt-5"></div>
+        <h4 class="my-3 font-weight-bold text-center">" Development of rural tourism and rural homestays rests on the 6 strategic pillars which are based on the theme of sustainable and responsible tourism "</h4>
+        <ul class="nav flex-column">
+          <li class="font-weight-bold"><i class="far fa-check-circle"></i> Benchmarking of state policies and best practices.</li>
+          <li class="font-weight-bold"><i class="far fa-check-circle"></i> Digital technologies and platform for rural tourism. </li>
+          <li class="font-weight-bold"><i class="far fa-check-circle"></i> Developing clusters for rural tourism.</li>
+          <li class="font-weight-bold"><i class="far fa-check-circle"></i> Marketing support for rural tourism.</li>
+          <li class="font-weight-bold"><i class="far fa-check-circle"></i> Capacity building of stakeholders.</li>
+          <li class="font-weight-bold"><i class="far fa-check-circle"></i> Governance and Institutional framework.</li>
+        </ul> -->
+
+        
+      </div>
+    </div>
+  </body>
+  </html>

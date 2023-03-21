@@ -1,0 +1,159 @@
+/* Animating Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar {
+  background-color: #455A64;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Style for the navbar links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Animating Form */
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 16px;
+    background-color: #f5f5f5;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"],
+button[type="button"] {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #555;
+}
+
+.cancelbtn {
+    background-color: #ccc;
+}
+
+/* Animating Card */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card div {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card div:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.card h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 18px;
+    color: #888;
+}
+
+.card a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.card a:hover {
+    transform: translateY(-5px);
+}
+
+.card button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #555;
+}

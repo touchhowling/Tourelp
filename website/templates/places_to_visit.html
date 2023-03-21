@@ -1,0 +1,94 @@
+<html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/places_to_visit.css') }}">
+  <body>
+        <!-- Navbar -->
+    <nav class="navbar">
+        <a href="{{url_for('home')}}"><h1>Tourelp</h1></a>
+      <div>
+        <div class="dropdown">
+          <a href="{{url_for('tourist')}}"><button class="dropbtn">Tourist</button></a>
+          <div class="dropdown-content">
+            <a href="{{url_for('views.budget_planner')}}">Budget Planner</a>
+            <a href="{{url_for('views.contact_us')}}">Contact Us</a>
+            <a href="{{url_for('views.places_to_visit')}}">Places to Visit</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><a href="{{url_for('local')}}">Locals</a></button>
+          <div class="dropdown-content">
+            <a href="{{url_for('guide')}}">Act as Guide</a>
+            <a href="{{url_for('guide')}}">Act as Artist</a>
+            <a href="{{url_for('views.homestay_tourism')}}">HomestayTourism</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><a href="{{url_for('staff')}}">Staff</a></button>
+          <div class="dropdown-content">
+            <a href="{{url_for('login')}}">Login</a>
+            
+          </div>
+        </div>
+      </div>
+    </nav><br><br>
+    
+  <div class="city-tiles">
+  <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--_Xp6t_y4--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_975/v1/images/photos/000/127/512/original/1524635958_shutterstock_709472335.jpg.jpg?1524635958" alt="Kashmir Valley">
+    <h3>Kashmir Valley</h3>
+  </div>
+  <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--ffVDhkoA--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/013/736/original/1463259871_ladakh.jpg.jpg?1463259871" alt=Ladakh>
+    <h3>Ladakh</h3>
+  </div>
+  <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--u9MWKoiJ--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/013/323/original/1556197502_shutterstock_1156319998.jpg.jpg?1556197502" alt="Rishikesh">
+    <h3>Rishikesh</h3>
+  </div>
+  <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--7MprSbd9--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/004/136/original/Haridwar.jpg.jpg?1458192627" alt="Haridwar">
+    <h3>Haridwar</h3>
+  </div>
+  <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--_2xrLzVe--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/004/131/original/Dehradun.jpg.jpg?1458192698" alt="Deharadun">
+    <h3>Deharadun</h3>
+  </div>
+  <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--0D6qBK9S--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/097/360/original/1527258790_Temples_in_Varanasi.jpg.jpg?1527258790" alt="Varanasi">
+    <h3>Varanasi</h3>
+  </div>
+  <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--foelnLEh--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/013/604/original/agra-2.jpg.jpg?1458192596" alt="Agra">
+    <h3>Agra</h3>
+  </div>
+   <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--q1PWzD7D--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/052/849/original/1514456313_things_to_do_jodhpur.jpg.jpg?1514456313" alt="Jodhpur">
+    <h3>Jodhpur</h3>
+  </div>
+    <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--4IPygJgA--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/135/752/original/1540816023_shutterstock_415397137.jpg.jpg?1540816023" alt="Udaipur">
+    <h3>Udaipur</h3>
+  </div>
+    <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--ksbUQF6E--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/052/395/original/Goa_(44).jpg.jpg?1458198752" alt="Grand Island Goa">
+    <h3>Grand Island Goa</h3>
+  </div>
+    <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--kUmFsI8A--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/013/575/original/1489731676_shivaji_park_bridge_mumbai-HD.jpg.jpg?1489731676" alt="Mumbai">
+    <h3>Mumbai</h3>
+  </div>
+    <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--53IIO9nL--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/075/465/original/Khandala.jpg.jpg?1461767413" alt="Lonavala">
+    <h3>Lonavala</h3>
+  </div>
+    <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--1W1S7cV0--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/048/579/original/1552897506_mahabaleshwar_places_feature.jpg.jpg?1552897506" alt="Mahabaleshwar">
+    <h3>Mahabaleshwar</h3>
+  </div>
+    <div class="city-tile">
+    <img src="https://images.thrillophilia.com/image/upload/s--zItkPSMq--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_995/v1/images/photos/000/151/839/original/1556778754_1556272723_Alibaug.jpg.jpg.jpg.jpg?1556778754" alt="Alibaug">
+    <h3>Alibaug</h3>
+  </div>  
+  </body>
+    </html>
