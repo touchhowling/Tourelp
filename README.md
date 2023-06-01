@@ -49,7 +49,7 @@ To run the Tourelp website locally, follow these steps:
 1. Clone the repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/touchhowling/tourelp2.git
+   git clone https://github.com/touchhowling/Tourelp.git
    ```
 
 2. Navigate to the project directory:
